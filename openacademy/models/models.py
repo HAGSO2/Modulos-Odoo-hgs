@@ -1,11 +1,28 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields, api
 
 
-# class openacademy(models.Model):
-#     _name = 'openacademy.openacademy'
-#     _description = 'openacademy.openacademy'
+class incidencia(models.Model):
+     _name = 'openacademy.incidencia'
+     _description = 'Modelo para la gestión de incidencias'
+
+     description = fields.Char(
+          string='Descripcion'
+     )
+
+     prioridad = fields.Integer(
+          string='Prioridad'
+     )
+
+     urgente = fields.Selection(
+          string='Urgente',
+          selection=[('0','No'),('1','Si')]
+     )
+
+     cerrada = fields.Boolean(
+          string='Cerrada'
+     )
 
 #     name = fields.Char()
 #     value = fields.Integer()
