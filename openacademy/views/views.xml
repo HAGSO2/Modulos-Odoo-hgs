@@ -2,26 +2,26 @@
   <data>
     <!-- explicit list view definition -->
 
-    <!-- Elementos de menu -->
+    <!-- Elementos de menu
     <record model="ir.ui.view" id="incidencia_list">
       <field name="name">Lista de incidencia</field>
       <field name="model">openacademy.incidencia</field>
       <field name="arch" type="xml">
-        <list>
+        <tree>
           <field name="descripcion"/>
           <field name="prioridad"/>
           <field name="urgente"/>
           <field name="cerrada"/>
-        </list>
+        </tree>
       </field>
-    </record>
+    </record>-->
 
-    <!-- actions opening views on models -->
-    <record model="ir.actions.act_window" id="incidencia.action_window">
+    <!-- actions opening views on models
+    <record model="ir.actions.act_window" id="incidencia_action_window">
       <field name="name">Lista de incidencias</field>
       <field name="res_model">openacademy.incidencia</field>
       <field name="view_mode">list,form</field>
-    </record>
+    </record>-->
 
     <!-- server action to the one above -->
 <!--
@@ -39,19 +39,19 @@
     </record>
 -->
 
-    <!-- Top menu item -->
-    <menuitem name="Openacademy SGE" id="openacademy.menu_root"/>
+    <!-- Top menu item 
+    <menuitem name="Openacademy SGE" id="openacademy.menu_root"/>-->
 
-    <!-- menu categories -->
+    <!-- menu categories 
 
-    <menuitem name="Incidencias" id="openacademy_incidencias" parent="openacademy.menu_root"/>
+    <menuitem name="Incidencias" id="openacademy_incidencias" parent="openacademy.menu_root"/>-->
     <!--
     <menuitem name="Menu 2" id="openacademy.menu_2" parent="openacademy.menu_root"/>
     -->
 
-    <!-- actions -->
+    <!-- actions
     <menuitem name="Mostrar lista" id="incidencia_list" parent="openacademy_incidencias"
-              action="incidencia.action_window"/>
+              action="incidencia.action_window"/>-->
 <!--    <menuitem name="Server to list" id="openacademy" parent="openacademy.menu_2"
               action="openacademy.action_server"/>
 -->
